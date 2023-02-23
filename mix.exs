@@ -27,8 +27,7 @@ defmodule ExRated.Mixfile do
   def application do
     [
       extra_applications: [:logger],
-      env: [timeout: 90_000_000, cleanup_rate: 60_000, ets_table_name: :ex_rated_buckets],
-      mod: {ExRated.App, []}
+      env: [timeout: 90_000_000, cleanup_rate: 60_000, ets_table_name: :ex_rated_buckets]
     ]
   end
 
